@@ -27,7 +27,7 @@ const Navbar = () => {
       </Button> */}
       {/* RIGHT */}
       <div className="flex items-center gap-4">
-        <Link href="/">Dashboard</Link>
+        {/* <Link href="/">Dashboard</Link> */}
         {/* THEME MENU */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -52,10 +52,10 @@ const Navbar = () => {
         {/* USER MENU */}
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <Avatar>
-              <AvatarImage src="https://avatars.githubusercontent.com/u/1486366" />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
+            {/* <Avatar>
+              <AvatarImage src="simplyfire.png" />
+              <AvatarFallback>SF</AvatarFallback>
+            </Avatar> */}
           </DropdownMenuTrigger>
           <DropdownMenuContent sideOffset={10}>
             <DropdownMenuLabel>My Account</DropdownMenuLabel>

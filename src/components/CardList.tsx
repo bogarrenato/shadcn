@@ -9,7 +9,7 @@ const popularContent = [
     badge: "Coding",
     image:
       "https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 4300,
+    count: 1000,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const popularContent = [
     badge: "Tech",
     image:
       "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 3200,
+    count: 2000,
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const popularContent = [
     badge: "AI",
     image:
       "https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 2400,
+    count: 3000,
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const popularContent = [
     badge: "Coding",
     image:
       "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1500,
+    count: 4000,
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ const popularContent = [
     badge: "AI",
     image:
       "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1200,
+    count: 5000,
   },
 ];
 
@@ -52,7 +52,7 @@ const latestTransactions = [
     badge: "John Doe",
     image:
       "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1400,
+    count: 1000,
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ const latestTransactions = [
     badge: "Jane Smith",
     image:
       "https://images.pexels.com/photos/4969918/pexels-photo-4969918.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 2100,
+    count: 2000,
   },
   {
     id: 3,
@@ -68,7 +68,7 @@ const latestTransactions = [
     badge: "Michael Johnson",
     image:
       "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1300,
+    count: 3000,
   },
   {
     id: 4,
@@ -76,7 +76,7 @@ const latestTransactions = [
     badge: "Lily Adams",
     image:
       "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 2500,
+    count: 4000,
   },
   {
     id: 5,
@@ -84,7 +84,7 @@ const latestTransactions = [
     badge: "Sam Brown",
     image:
       "https://images.pexels.com/photos/1680175/pexels-photo-1680175.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1400,
+    count: 5000,
   },
 ];
 

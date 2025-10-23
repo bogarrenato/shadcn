@@ -160,8 +160,8 @@ const SingleUserPage = () => {
           <div className="bg-primary-foreground p-4 rounded-lg space-y-2">
             <div className="flex items-center gap-2">
               <Avatar className="size-12">
-                <AvatarImage src="https://avatars.githubusercontent.com/u/1486366" />
-                <AvatarFallback>JD</AvatarFallback>
+                <AvatarImage src="simplyfire.png" />
+                <AvatarFallback>SF</AvatarFallback>
               </Avatar>
               <h1 className="text-xl font-semibold">John Doe</h1>
             </div>

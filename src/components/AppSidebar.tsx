@@ -44,27 +44,27 @@ import {
 
 const items = [
   {
-    title: "Home",
+    title: "Főoldal",
     url: "/",
     icon: Home,
   },
   {
-    title: "Inbox",
-    url: "#",
+    title: "Üzenetek",
+    url: "/messages",
     icon: Inbox,
   },
   {
-    title: "Calendar",
+    title: "Naptár",
     url: "#",
     icon: Calendar,
   },
   {
-    title: "Search",
+    title: "Keresés",
     url: "#",
     icon: Search,
   },
   {
-    title: "Settings",
+    title: "Beállítások",
     url: "#",
     icon: Settings,
   },
@@ -78,8 +78,8 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link href="/">
-                <Image src="/logo.svg" alt="logo" width={20} height={20} />
-                <span>Lama Dev</span>
+                <Image src="/simplyfire.png" alt="logo" width={20} height={20} />
+                <span>SimplyFire.ai admin oldal</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -88,7 +88,7 @@ const AppSidebar = () => {
       <SidebarSeparator />
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel>Alkalmazás</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
@@ -99,7 +99,7 @@ const AppSidebar = () => {
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
-                  {item.title === "Inbox" && (
+                  {item.title === "Üzenetek" && (
                     <SidebarMenuBadge>24</SidebarMenuBadge>
                   )}
                 </SidebarMenuItem>
@@ -108,9 +108,9 @@ const AppSidebar = () => {
           </SidebarGroupContent>
         </SidebarGroup>
         <SidebarGroup>
-          <SidebarGroupLabel>Projects</SidebarGroupLabel>
+          <SidebarGroupLabel>Projektek</SidebarGroupLabel>
           <SidebarGroupAction>
-            <Plus /> <span className="sr-only">Add Project</span>
+            <Plus /> <span className="sr-only">Projekt hozzáadása</span>
           </SidebarGroupAction>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -118,7 +118,7 @@ const AppSidebar = () => {
                 <SidebarMenuButton asChild>
                   <Link href="/#">
                     <Projector />
-                    See All Projects
+                    Összes projekt
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -126,7 +126,7 @@ const AppSidebar = () => {
                 <SidebarMenuButton asChild>
                   <Link href="/#">
                     <Plus />
-                    Add Project
+                    Projekt hozzáadása
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -138,7 +138,7 @@ const AppSidebar = () => {
           <SidebarGroup>
             <SidebarGroupLabel asChild>
               <CollapsibleTrigger>
-                Collapsable Group
+                Összecsukható csoport
                 <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
               </CollapsibleTrigger>
             </SidebarGroupLabel>
@@ -149,7 +149,7 @@ const AppSidebar = () => {
                     <SidebarMenuButton asChild>
                       <Link href="/#">
                         <Projector />
-                        See All Projects
+                        Összes projekt
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
@@ -157,7 +157,7 @@ const AppSidebar = () => {
                     <SidebarMenuButton asChild>
                       <Link href="/#">
                         <Plus />
-                        Add Project
+                        Projekt hozzáadása
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
@@ -168,14 +168,14 @@ const AppSidebar = () => {
         </Collapsible>
         {/* NESTED */}
         <SidebarGroup>
-          <SidebarGroupLabel>Nested Items</SidebarGroupLabel>
+          <SidebarGroupLabel>Beágyazott elemek</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
                   <Link href="/#">
                     <Projector />
-                    See All Projects
+                    Összes projekt
                   </Link>
                 </SidebarMenuButton>
                 <SidebarMenuSub>
@@ -183,7 +183,7 @@ const AppSidebar = () => {
                     <SidebarMenuSubButton asChild>
                       <Link href="/#">
                         <Plus />
-                        Add Project
+                        Projekt hozzáadása
                       </Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
@@ -191,7 +191,7 @@ const AppSidebar = () => {
                     <SidebarMenuSubButton asChild>
                       <Link href="/#">
                         <Plus />
-                        Add Category
+                        Kategória hozzáadása
                       </Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
@@ -211,9 +211,10 @@ const AppSidebar = () => {
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                <DropdownMenuItem>Account</DropdownMenuItem>
-                <DropdownMenuItem>Setting</DropdownMenuItem>
-                <DropdownMenuItem>Sign out</DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/profile">Profilom</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>Kijelentkezés</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </SidebarMenuItem>
